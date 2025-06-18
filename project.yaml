@@ -1,0 +1,43 @@
+basic:
+    name: 'WXT Demo Logged In'
+    environments:
+        production: 'https://wxt.12pro.ca'
+        staging: ''
+        development: ''
+    basicAuth:
+        production: { user: admin, password: wxtPa$$! }
+    breakpoints:
+        - 720
+        - 1200
+        - 1440
+    pages:
+        - /
+        - /fr/node/3
+        - /en
+    monitoring:
+        days: {  }
+        type: ''
+        schedule_time: '12:30 AM'
+        schedule_time_zone: Europe/London
+        compare_with: last-production
+        compare_with_fresh: production
+advanced:
+    mask: ''
+    remove: ''
+    delay: 10
+    scroll: false
+    headers: {  }
+    cookies: ''
+    custom_js: ''
+    custom_css: ''
+    mock_content: {  }
+    sensitivity: 15
+    night_mode: false
+    retina_images: false
+    single_ip: false
+    performance:
+        workers_production: 30
+        workers_nonproduction: 10
+        workers_production_delay: 0
+        workers_nonproduction_delay: 0
+    stabilize: true
